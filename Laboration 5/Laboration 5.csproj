@@ -7,8 +7,4 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Htmlhelper\Htmlhelper.csproj" />
-  </ItemGroup>
-
 </Project>

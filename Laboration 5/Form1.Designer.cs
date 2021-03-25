@@ -53,7 +53,6 @@ namespace Laboration_5
             this.txt_URL.Name = "txt_URL";
             this.txt_URL.Size = new System.Drawing.Size(408, 23);
             this.txt_URL.TabIndex = 1;
-            this.txt_URL.Text = "https://gp.se";
             // 
             // label_URL
             // 
@@ -67,9 +66,10 @@ namespace Laboration_5
             // txt_multibox
             // 
             this.txt_multibox.Location = new System.Drawing.Point(86, 81);
+            this.txt_multibox.MaximumSize = new System.Drawing.Size(400, 333);
             this.txt_multibox.Multiline = true;
             this.txt_multibox.Name = "txt_multibox";
-            this.txt_multibox.Size = new System.Drawing.Size(408, 334);
+            this.txt_multibox.Size = new System.Drawing.Size(400, 333);
             this.txt_multibox.TabIndex = 1;
             // 
             // btn_saveAll
@@ -96,13 +96,15 @@ namespace Laboration_5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(607, 459);
+            this.ClientSize = new System.Drawing.Size(609, 461);
             this.Controls.Add(this.label_count);
             this.Controls.Add(this.btn_saveAll);
             this.Controls.Add(this.label_URL);
             this.Controls.Add(this.txt_multibox);
             this.Controls.Add(this.txt_URL);
             this.Controls.Add(this.btn_URL);
+            this.MaximumSize = new System.Drawing.Size(625, 500);
+            this.MinimumSize = new System.Drawing.Size(625, 500);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
