@@ -42,6 +42,7 @@ namespace Laboration_5
             else MessageBox.Show("Wrong Input", "Warning", MessageBoxButtons.OK);
             txt_URL.Text = "";
         }
+
         /// <summary>
         /// "Save all" button
         /// Will ask the user to select a folder
@@ -78,7 +79,11 @@ namespace Laboration_5
             }
         }
         /// <summary>
-        /// Will tke the image-url and create a HttpClient and save the image as byte Array 
+        /// Will tke the image-url and create a HttpClient and save the image as byte Array
+        /// Will check if the response from the client is OK with "EnsureSuccessStatusCode"
+        /// Will check if the url has (jpg|jpeg|png|gif|bmp) as ending, if so it will add that
+        /// to filename.
+        /// Will send it to "SaveFile" metohd.
         /// </summary>
         /// <param name="path"></param>
         /// <param name="url"></param>
@@ -108,6 +113,12 @@ namespace Laboration_5
             
             return true;
         }
+        /// <summary>
+        /// Will open a new filestream and create an image
+        /// </summary>
+        /// <param name="path">Path + filename</param>
+        /// <param name="data">images as byte array</param>
+        /// <returns></returns>
         public async Task SaveFile(string path, byte[] data)
         {
             try
